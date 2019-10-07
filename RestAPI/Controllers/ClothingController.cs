@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.ApplicationServices;
+using Core.DomainServices.Filtering;
+using Core.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace RestAPI.Controllers
@@ -10,11 +13,49 @@ namespace RestAPI.Controllers
     [ApiController]
     public class ClothingController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private IClothingService _clothingService;
+
+        public ClothingController(IClothingService clothingService)
         {
-            return new string[] {"value1", "value2"};
+            _clothingService = clothingService;
+        }
+        
+        // GET api/Clothing
+        [HttpGet]
+        public ActionResult<FilteringList<Clothing>> Get([FromQuery] Filter filter)
+        {
+            try
+            {
+                if(filter.CurrentPage == 0 && filter.InfoPrPage == 0)
+                {
+                    var list = _clothingService.ReadAllClothes(null);
+                    var newList = new List<Clothing>();
+                    foreach (var clothing in list.List)
+                    {
+                        newList.Add(new Clothing()
+                        {
+                            Id = clothing.Id,
+                            Price = clothing.Price,
+                            Size = clothing.Size,
+                            ClothesTypes = clothing.ClothesTypes,
+                            ClothingInformation = clothing.ClothingInformation,
+                            ClothingName = clothing.ClothingName
+                        }) ;
+                    }
+                    var newFilteredList = new FilteringList<Clothing>();
+                    newFilteredList.List = newList;
+                    newFilteredList.Count = list.Count;
+                    return Ok(newFilteredList);
+                }
+
+                var fl = _clothingService.ReadAllClothes(filter);
+
+                return Ok(fl);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, e.Message);
+            }
         }
 
         // GET api/values/5

@@ -10,56 +10,64 @@ namespace Infrastructure.SQLList
             {
                 ClothesTypes = ClothesTypes.TShirt,
                 ClothingName = "Gucci",
-                Size = "L"
+                Size = "L",
+                Price = 699
             };
             
             Clothing clothing2 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Pants,
                 ClothingName = "Adidas",
-                Size = "XS"
+                Size = "XS",
+                Price = 499
             };
             
             Clothing clothing3 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Hoodie,
                 ClothingName = "Totoro",
-                Size = "XL"
+                Size = "XL",
+                Price = 199
             };
             
             Clothing clothing4 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Dress,
                 ClothingName = "Pieces",
-                Size = "M"
+                Size = "M",
+                Price = 599
             };
             
             Clothing clothing5 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Shoes,
                 ClothingName = "Jordans",
-                Size = "42"
+                Size = "42",
+                Price = 349
             };
             
             Clothing clothing6 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Skirt,
                 ClothingName = "Only",
-                Size = "XXXXXXL"
+                Size = "XXXXXXL",
+                Price = 799
             };
             
             Clothing clothing7 = new Clothing
             {
                 ClothesTypes = ClothesTypes.TShirt,
                 ClothingName = "Nike",
-                Size = "XL"
+                Size = "XL",
+                Price = 999
             };
             
             Clothing clothing8 = new Clothing
             {
                 ClothesTypes = ClothesTypes.Pants,
                 ClothingName = "Hummel",
-                Size = "XS"
+                Size = "XS",
+                Price = 99
             };
 
 

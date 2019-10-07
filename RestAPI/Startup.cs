@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.ApplicationServices;
+using Core.ApplicationServices.Impl;
 using Core.DomainServices;
 using Infrastructure.SQLList;
 using Infrastructure.SQLList.Repository;
@@ -34,6 +36,8 @@ namespace RestAPI
         {
             services.AddScoped<IClothingRepository, ClothingRepository>();
             services.AddDbContext<Context>(opt => opt.UseSqlite("Data Source = WebStoreDB.db"));
+
+            services.AddScoped<IClothingService, ClothingService>();
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddMvc().AddJsonOptions(opt =>
@@ -46,8 +50,8 @@ namespace RestAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseDeveloperExceptionPage();
 
+            app.UseDeveloperExceptionPage();
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var context = scope.ServiceProvider
@@ -63,6 +67,8 @@ namespace RestAPI
                 }
                 else
                 {
+                    context.Database.EnsureDeleted();
+                    context.Database.EnsureCreated();
                     DBInitializer.Initialize(context);
                     app.UseHsts();
                 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65bb29b3-1e56-4976-b734-d517c04459d4" name="Default Changelist" comment="" />
@@ -38,17 +38,18 @@
         <option value="$PROJECT_DIR$/Core/DomainServices/Filtering/Filter.cs" />
         <option value="$PROJECT_DIR$/Core/DomainServices/Filtering/FilteringList.cs" />
         <option value="$PROJECT_DIR$/Core/ApplicationServices/IClothingService.cs" />
-        <option value="$PROJECT_DIR$/Core/ApplicationServices/Impl/ClothingService.cs" />
         <option value="$PROJECT_DIR$/Core/DomainServices/IClothingRepository.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
-        <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Context.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
+        <option value="$PROJECT_DIR$/Core/ApplicationServices/Impl/ClothingService.cs" />
+        <option value="$PROJECT_DIR$/RestAPI/Program.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
         <option value="$PROJECT_DIR$/Core.Entity/Clothing.cs" />
         <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
+        <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
       </list>
     </option>
   </component>
@@ -72,25 +73,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Azure - Publish Web App.Publish RestAPI to Azure (1)">
-    <configuration name="Publish RestAPI to Azure (1)" type="AzureDotNetWebAppPublish" factoryName="Azure Web App" temporary="true">
+  <component name="RunManager" selected=".NET Launch Settings Profile.RestAPI: IIS Express">
+    <configuration name="Publish RestAPI to Azure " type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
       <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
       <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="ed8f0f84-a848-43bd-a6a4-8f6b32f49817" />
       <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
-      <option name="AZURE_WEB_APP_ID" value="/subscriptions/ed8f0f84-a848-43bd-a6a4-8f6b32f49817/resourceGroups/WebStoreProject/providers/Microsoft.Web/sites/WebStoreProject" />
-      <option name="AZURE_WEB_APP_NAME" value="webapp-191007113311" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/ed8f0f84-a848-43bd-a6a4-8f6b32f49817/resourceGroups/WebStore/providers/Microsoft.Web/sites/WebStoreProject" />
+      <option name="AZURE_WEB_APP_NAME" value="" />
       <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
-      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="PetShop-NWH-EASV-DK" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
       <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
       <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
       <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/ed8f0f84-a848-43bd-a6a4-8f6b32f49817/resourceGroups/nh-easv-test/providers/Microsoft.Web/serverfarms/ASP-nheasvtest-bfe2" />
-      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="appsp-191007113311" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
       <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="B1" />
       <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
       <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
       <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="ed8f0f84-a848-43bd-a6a4-8f6b32f49817" />
-      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="1" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
       <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="defaultConnection" />
       <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
       <option name="AZURE_SQL_DATABASE_ID" value="/subscriptions/ed8f0f84-a848-43bd-a6a4-8f6b32f49817/resourceGroups/WebStore/providers/Microsoft.Sql/servers/webstoreserver-nwh/databases/WebStoreDB" />
@@ -141,11 +142,10 @@
     <list>
       <item itemvalue=".NET Launch Settings Profile.RestAPI: IIS Express" />
       <item itemvalue=".NET Project.Default" />
-      <item itemvalue="Azure - Publish Web App.Publish RestAPI to Azure (1)" />
+      <item itemvalue="Azure - Publish Web App.Publish RestAPI to Azure " />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Azure - Publish Web App.Publish RestAPI to Azure (1)" />
         <item itemvalue=".NET Launch Settings Profile.RestAPI: IIS Express" />
       </list>
     </recent_temporary>
@@ -161,7 +161,9 @@
       <option name="presentableId" value="Default" />
       <updated>1570434826671</updated>
       <workItem from="1570434832513" duration="2611000" />
-      <workItem from="1570437463659" duration="5042000" />
+      <workItem from="1570437463659" duration="5279000" />
+      <workItem from="1570444097730" duration="126000" />
+      <workItem from="1570444583250" duration="3983000" />
     </task>
     <servers />
   </component>
@@ -193,6 +195,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" initialLine="26">
+            <startOffsets>
+              <option value="710" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1977" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

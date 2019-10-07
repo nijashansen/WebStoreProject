@@ -8,6 +8,7 @@ namespace Core.Entity
         public string Size { get; set; }
         public ClothesTypes ClothesTypes { get; set; }
         public string ClothingName { get; set; }
+        public int Price { get; set; }
         public string ClothingInformation { get; set; }
     }
 }
