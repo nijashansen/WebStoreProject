@@ -44,12 +44,12 @@
         <option value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
         <option value="$PROJECT_DIR$/Core/ApplicationServices/Impl/ClothingService.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Program.cs" />
-        <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
         <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/Core.Entity/Clothing.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
+        <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
       </list>
     </option>
   </component>
@@ -164,7 +164,7 @@
       <workItem from="1570434832513" duration="2611000" />
       <workItem from="1570437463659" duration="5279000" />
       <workItem from="1570444097730" duration="126000" />
-      <workItem from="1570444583250" duration="6240000" />
+      <workItem from="1570444583250" duration="6894000" />
     </task>
     <servers />
   </component>
