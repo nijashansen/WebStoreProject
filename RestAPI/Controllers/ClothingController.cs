@@ -8,7 +8,7 @@ namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ClothingController : ControllerBase
     {
         // GET api/values
         [HttpGet]
