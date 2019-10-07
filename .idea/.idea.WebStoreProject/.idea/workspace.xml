@@ -74,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Azure - Publish Web App.Publish RestAPI to Azure ">
+  <component name="RunManager" selected=".NET Launch Settings Profile.RestAPI: IIS Express">
     <configuration name="Publish RestAPI to Azure " type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
       <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
       <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="ed8f0f84-a848-43bd-a6a4-8f6b32f49817" />
@@ -164,7 +164,7 @@
       <workItem from="1570434832513" duration="2611000" />
       <workItem from="1570437463659" duration="5279000" />
       <workItem from="1570444097730" duration="126000" />
-      <workItem from="1570444583250" duration="5915000" />
+      <workItem from="1570444583250" duration="6240000" />
     </task>
     <servers />
   </component>
