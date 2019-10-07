@@ -4,23 +4,22 @@
     <e p="C:\Users\Nijas Hansen\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Nijas Hansen\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WebStoreProject.1124417931.00" t="ExcludeRecursive" />
     <e p="C:\Users\Nijas Hansen\RiderProjects\WebStoreProject" t="IncludeFlat">
-      <e p="ConsoleApp" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="ConsoleApp.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.2" t="Include">
-              <e p="ConsoleApp.AssemblyInfo.cs" t="Include" />
-            </e>
+      <e p="Core" t="IncludeRecursive">
+        <e p="ApplicationServices" t="Include">
+          <e p="IClothingService.cs" t="Include" />
+          <e p="Impl" t="Include">
+            <e p="ClothingService.cs" t="Include" />
           </e>
         </e>
-        <e p="Program.cs" t="Include" />
-      </e>
-      <e p="Core" t="IncludeRecursive">
-        <e p="ApplicationServices" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Core.csproj" t="IncludeRecursive" />
-        <e p="DomainServices" t="Include" />
+        <e p="DomainServices" t="Include">
+          <e p="Filtering" t="Include">
+            <e p="Filter.cs" t="Include" />
+            <e p="FilteringList.cs" t="Include" />
+          </e>
+          <e p="IClothingRepository.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -31,7 +30,8 @@
       </e>
       <e p="Core.Entity" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="ClothesTypes.cs" t="Include" />
+        <e p="Clothing.cs" t="Include" />
         <e p="Core.Entity.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -52,13 +52,18 @@
             </e>
           </e>
         </e>
-        <e p="Repository" t="Include" />
+        <e p="Repository" t="Include">
+          <e p="ClothingRepository.cs" t="Include" />
+        </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="RestAPI" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ValuesController.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
