@@ -13,7 +13,7 @@ namespace RestAPI.Controllers
     [ApiController]
     public class ClothingController : ControllerBase
     {
-        private IClothingService _clothingService;
+        readonly IClothingService _clothingService;
 
         public ClothingController(IClothingService clothingService)
         {
@@ -60,27 +60,42 @@ namespace RestAPI.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Clothing> Get(int id)
         {
-            return "value";
+            if (id < 1) return BadRequest("Id must be greater than 1");
+            return _clothingService.ReadClothing(id);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<Clothing> Post([FromBody] Clothing clothing)
         {
+            return _clothingService.CreateClothing(clothing);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult<Clothing> Put(int id, [FromBody] Clothing clothing)
         {
+            if (id < 1 || id != clothing.Id)
+            {
+                return BadRequest("Parameter id and owner id must be the same");
+            }
+
+            _clothingService.UpdateClothing(clothing);
+            return Ok();
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult<Clothing> Delete(int id)
         {
+            Clothing clothing = _clothingService.DeleteClothing(id);
+            if (clothing == null)
+            {
+                return BadRequest("Parameter id must match Clothing id");
+            }
+            return Ok("Clothing with id: " + id + " Was deleted");
         }
     }
 }

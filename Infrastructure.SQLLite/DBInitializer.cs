@@ -4,7 +4,7 @@ namespace Infrastructure.SQLList
 {
     public class DBInitializer
     {
-        public static void Initialize(Context context)
+        public static void Initialize(Context ctx)
         {
             Clothing clothing1 = new Clothing
             {
@@ -71,17 +71,17 @@ namespace Infrastructure.SQLList
             };
 
 
-            clothing1 = context.Clothes.Add(clothing1).Entity;
-            clothing2 = context.Clothes.Add(clothing2).Entity;
-            clothing3 = context.Clothes.Add(clothing3).Entity;
-            clothing4 = context.Clothes.Add(clothing4).Entity;
-            clothing5 = context.Clothes.Add(clothing5).Entity;
-            clothing6 = context.Clothes.Add(clothing6).Entity;
-            clothing7 = context.Clothes.Add(clothing7).Entity;
-            clothing8 = context.Clothes.Add(clothing8).Entity;
+            clothing1 = ctx.Clothes.Add(clothing1).Entity;
+            clothing2 = ctx.Clothes.Add(clothing2).Entity;
+            clothing3 = ctx.Clothes.Add(clothing3).Entity;
+            clothing4 = ctx.Clothes.Add(clothing4).Entity;
+            clothing5 = ctx.Clothes.Add(clothing5).Entity;
+            clothing6 = ctx.Clothes.Add(clothing6).Entity;
+            clothing7 = ctx.Clothes.Add(clothing7).Entity;
+            clothing8 = ctx.Clothes.Add(clothing8).Entity;
 
 
-            context.SaveChanges();
+            ctx.SaveChanges();
         }  
     }
 }

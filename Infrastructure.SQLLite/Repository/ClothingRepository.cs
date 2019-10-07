@@ -9,7 +9,12 @@ namespace Infrastructure.SQLList.Repository
     public class ClothingRepository: IClothingRepository
     {
         private Context _context;
-        
+
+        public ClothingRepository(Context ctx)
+        {
+            _context = ctx;
+        }
+
         public FilteringList<Clothing> ReadClothingList(Filter filter = null)
         {
             var filteredList = new FilteringList<Clothing>();
@@ -19,12 +24,12 @@ namespace Infrastructure.SQLList.Repository
                 filteredList.List = _context.Clothes
                     .Skip((filter.CurrentPage - 1) * filter.InfoPrPage)
                     .Take(filter.InfoPrPage)
+                    .OrderBy(o => o.Id)
                     .ToList();
                 return filteredList;
             }
 
             filteredList.List = _context.Clothes;
-            
             filteredList.Count = filteredList.List.Count();
             return filteredList;
         }
