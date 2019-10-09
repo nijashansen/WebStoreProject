@@ -18,7 +18,6 @@
     <setting file="file://$PROJECT_DIR$/RestAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core.Entity/Clothing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestAPI/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Core.Entity/ClothesTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure.SQLLite/Context.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,16 +39,17 @@
         <option value="$PROJECT_DIR$/Core/ApplicationServices/IClothingService.cs" />
         <option value="$PROJECT_DIR$/Core/DomainServices/IClothingRepository.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Controllers/ValuesController.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Context.cs" />
         <option value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
         <option value="$PROJECT_DIR$/Core/ApplicationServices/Impl/ClothingService.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Program.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
+        <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/Core.Entity/Clothing.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
-        <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
+        <option value="$PROJECT_DIR$/Core.Entity/Order.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Context.cs" />
       </list>
     </option>
   </component>
@@ -74,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.RestAPI: IIS Express">
+  <component name="RunManager" selected="Azure - Publish Web App.Publish RestAPI to Azure ">
     <configuration name="Publish RestAPI to Azure " type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
       <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/RestAPI/RestAPI.csproj" />
       <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="ed8f0f84-a848-43bd-a6a4-8f6b32f49817" />
@@ -88,7 +88,7 @@
       <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/ed8f0f84-a848-43bd-a6a4-8f6b32f49817/resourceGroups/nh-easv-test/providers/Microsoft.Web/serverfarms/ASP-nheasvtest-bfe2" />
       <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
       <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
-      <option name="AZURE_WEB_APP_PRICING_TIER" value="B1" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="" />
       <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
       <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
       <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="ed8f0f84-a848-43bd-a6a4-8f6b32f49817" />
@@ -165,6 +165,8 @@
       <workItem from="1570437463659" duration="5279000" />
       <workItem from="1570444097730" duration="126000" />
       <workItem from="1570444583250" duration="6894000" />
+      <workItem from="1570458182614" duration="1183000" />
+      <workItem from="1570605282282" duration="423000" />
     </task>
     <servers />
   </component>

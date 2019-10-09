@@ -8,7 +8,7 @@ namespace Infrastructure.SQLList
         {
             Clothing clothing1 = new Clothing
             {
-                ClothesTypes = ClothesTypes.TShirt,
+                ClothingType = "TShirt",
                 ClothingName = "Gucci",
                 Size = "L",
                 Price = 699
@@ -16,7 +16,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing2 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Pants,
+                ClothingType = "Pants",
                 ClothingName = "Adidas",
                 Size = "XS",
                 Price = 499
@@ -24,7 +24,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing3 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Hoodie,
+                ClothingType = "Hoodie",
                 ClothingName = "Totoro",
                 Size = "XL",
                 Price = 199
@@ -32,7 +32,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing4 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Dress,
+                ClothingType = "Dress",
                 ClothingName = "Pieces",
                 Size = "M",
                 Price = 599
@@ -40,7 +40,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing5 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Shoes,
+                ClothingType = "Shoes",
                 ClothingName = "Jordans",
                 Size = "42",
                 Price = 349
@@ -48,7 +48,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing6 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Skirt,
+                ClothingType = "Skirt",
                 ClothingName = "Only",
                 Size = "XXXXXXL",
                 Price = 799
@@ -56,7 +56,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing7 = new Clothing
             {
-                ClothesTypes = ClothesTypes.TShirt,
+                ClothingType = "TShirt",
                 ClothingName = "Nike",
                 Size = "XL",
                 Price = 999
@@ -64,7 +64,7 @@ namespace Infrastructure.SQLList
             
             Clothing clothing8 = new Clothing
             {
-                ClothesTypes = ClothesTypes.Pants,
+                ClothingType = "Pants",
                 ClothingName = "Hummel",
                 Size = "XS",
                 Price = 99

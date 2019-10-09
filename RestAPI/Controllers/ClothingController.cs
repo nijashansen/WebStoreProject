@@ -37,7 +37,7 @@ namespace RestAPI.Controllers
                             Id = clothing.Id,
                             Price = clothing.Price,
                             Size = clothing.Size,
-                            ClothesTypes = clothing.ClothesTypes,
+                            ClothingType = clothing.ClothingType,
                             ClothingInformation = clothing.ClothingInformation,
                             ClothingName = clothing.ClothingName
                         }) ;

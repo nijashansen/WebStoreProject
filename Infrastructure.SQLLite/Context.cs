@@ -10,7 +10,6 @@ namespace Infrastructure.SQLList
 
         }
         
-
         public DbSet<Clothing> Clothes { get; set; }
     }
 }
