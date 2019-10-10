@@ -34,7 +34,6 @@
         <option value="$PROJECT_DIR$/Core/Class1.cs" />
         <option value="$PROJECT_DIR$/Core.Entity/Class1.cs" />
         <option value="$PROJECT_DIR$/Core.Entity/ClothesTypes.cs" />
-        <option value="$PROJECT_DIR$/Core/DomainServices/Filtering/Filter.cs" />
         <option value="$PROJECT_DIR$/Core/DomainServices/Filtering/FilteringList.cs" />
         <option value="$PROJECT_DIR$/Core/ApplicationServices/IClothingService.cs" />
         <option value="$PROJECT_DIR$/Core/DomainServices/IClothingRepository.cs" />
@@ -43,13 +42,14 @@
         <option value="$PROJECT_DIR$/Core/ApplicationServices/Impl/ClothingService.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Program.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Startup.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
         <option value="$PROJECT_DIR$/RestAPI/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/Core.Entity/Clothing.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
-        <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
         <option value="$PROJECT_DIR$/Core.Entity/Order.cs" />
         <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Context.cs" />
+        <option value="$PROJECT_DIR$/Core/DomainServices/Filtering/Filter.cs" />
+        <option value="$PROJECT_DIR$/Core.Entity/Clothing.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/Repository/ClothingRepository.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure.SQLLite/DBInitializer.cs" />
+        <option value="$PROJECT_DIR$/RestAPI/Controllers/ClothingController.cs" />
       </list>
     </option>
   </component>
@@ -167,6 +167,9 @@
       <workItem from="1570444583250" duration="6894000" />
       <workItem from="1570458182614" duration="1183000" />
       <workItem from="1570605282282" duration="423000" />
+      <workItem from="1570626726819" duration="119000" />
+      <workItem from="1570698253886" duration="81000" />
+      <workItem from="1570703083286" duration="4746000" />
     </task>
     <servers />
   </component>

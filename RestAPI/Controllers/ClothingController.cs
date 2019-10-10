@@ -39,7 +39,8 @@ namespace RestAPI.Controllers
                             Size = clothing.Size,
                             ClothingType = clothing.ClothingType,
                             ClothingInformation = clothing.ClothingInformation,
-                            ClothingName = clothing.ClothingName
+                            ClothingName = clothing.ClothingName,
+                            ImgLink = clothing.ImgLink
                         }) ;
                     }
                     var newFilteredList = new FilteringList<Clothing>();
@@ -62,40 +63,72 @@ namespace RestAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<Clothing> Get(int id)
         {
-            if (id < 1) return BadRequest("Id must be greater than 1");
-            return _clothingService.ReadClothing(id);
+            try
+            {
+                if (id < 1) return BadRequest("Id must be greater than 1");
+                return _clothingService.ReadClothing(id);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         // POST api/values
         [HttpPost]
         public ActionResult<Clothing> Post([FromBody] Clothing clothing)
         {
-            return _clothingService.CreateClothing(clothing);
+            try
+            {
+                return _clothingService.CreateClothing(clothing);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
         public ActionResult<Clothing> Put(int id, [FromBody] Clothing clothing)
         {
-            if (id < 1 || id != clothing.Id)
+            try
             {
-                return BadRequest("Parameter id and owner id must be the same");
-            }
+                if (id < 1 || id != clothing.Id)
+                {
+                    return BadRequest("Parameter id and owner id must be the same");
+                }
 
-            _clothingService.UpdateClothing(clothing);
-            return Ok();
+                _clothingService.UpdateClothing(clothing);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public ActionResult<Clothing> Delete(int id)
         {
-            Clothing clothing = _clothingService.DeleteClothing(id);
-            if (clothing == null)
+            try
             {
-                return BadRequest("Parameter id must match Clothing id");
+                Clothing clothing = _clothingService.DeleteClothing(id);
+                if (clothing == null)
+                {
+                    return BadRequest("Parameter id must match Clothing id");
+                }
+                return Ok("Clothing with id: " + id + " Was deleted");
             }
-            return Ok("Clothing with id: " + id + " Was deleted");
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
 }

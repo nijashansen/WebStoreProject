@@ -10,5 +10,6 @@ namespace Core.Entity
         public string ClothingName { get; set; }
         public int Price { get; set; }
         public string ClothingInformation { get; set; }
+        public string ImgLink { get; set; }
     }
 }
